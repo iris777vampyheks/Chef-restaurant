@@ -34,7 +34,6 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .list-inline-item {
     margin-right: 0;
@@ -250,14 +249,10 @@ input .ig {
   }
 }
 .bg-footer {
-  background-image: url(../img/team_background.jpg);
-  height: auto;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.859);
+  background-image: url(../../../public/images/footer_background.jpg);
+  background-color: rgba(0, 0, 0, 0.165);
   background-blend-mode: darken;
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 .bg-footer .img-menu {
   border-radius: 50%;

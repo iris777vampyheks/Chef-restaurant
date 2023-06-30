@@ -1,12 +1,8 @@
 .bg-footer {
-    background-image: url(../img/team_background.jpg);
-    height: auto;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.859);
+    background-image: url(../../../public/images/footer_background.jpg);
+    background-color: rgba(0, 0, 0, 0.165);
     background-blend-mode: darken;
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 
     .img-menu {
         border-radius: 50%;
