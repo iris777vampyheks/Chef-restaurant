@@ -34,6 +34,13 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .list-inline-item {
+    margin-right: 0;
+    font-size: 10px;
+  }
+}
 .nav-tabs-elements .element {
   font-size: 71px;
   color: rgb(244, 39, 39);
@@ -102,19 +109,19 @@ h1, .h1 {
 .menu-table .col-6 .price {
   width: 17%;
   color: rgb(193, 18, 18);
-  background-color: #d2b3b3;
+  background-color: #e0b9b9;
 }
 
 @media (max-width: 426px) {
   .nav-tabs-elements .element {
     font-family: courgette;
-    font-size: 6vw;
+    font-size: 2vw;
     color: rgb(193, 18, 18);
     border-bottom: 1px solid gray;
     border-right: 1px solid gray;
     border-radius: 0;
     background-color: white;
-    width: 20vw;
+    width: 15vw;
     margin-bottom: 5vh !important;
   }
   .nav-tabs-elements .element h6, .nav-tabs-elements .element .h6 {
@@ -122,7 +129,7 @@ h1, .h1 {
   }
   .nav-tabs-elements .active {
     background-color: white !important;
-    border-right: 5px solid gray;
+    border-right: 3px solid gray;
   }
   .nav-tabs-elements .active i {
     color: rgb(193, 18, 18);
@@ -208,9 +215,12 @@ input {
   padding: 12px;
 }
 @media (max-width: 426px) {
-  input {
-    padding-left: 95px;
+  input .bg-footer {
+    margin: 0;
   }
+}
+input .ig {
+  margin-right: 10%;
 }
 
 .section5 {
@@ -224,6 +234,21 @@ input {
   border: 2px solid rgba(255, 255, 255, 0.6078431373);
 }
 
+@media (max-width: 426px) {
+  .card img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .div-card, .card-block {
+    margin-left: -45px;
+  }
+  .txt {
+    text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 7px;
+  }
+}
 .bg-footer {
   background-image: url(../img/team_background.jpg);
   height: auto;

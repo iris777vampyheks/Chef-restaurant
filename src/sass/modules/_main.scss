@@ -16,6 +16,15 @@ body {
     }
 }
 
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .list-inline-item {
+        margin-right: 0;
+        font-size: 10px;
+    }
+}
+
+
 //* section 2
 .nav-tabs-elements {
     .element {
@@ -68,9 +77,11 @@ body {
 i {
     color: rgb(173, 39, 39);
 }
+
 h1 {
     font-family: courgette;
 }
+
 .menu-table {
     width: 100%;
     height: fit-content;
@@ -96,7 +107,7 @@ h1 {
         .price {
             width: 17%;
             color: $red;
-            background-color: #d2b3b3;
+            background-color: #e0b9b9;
         }
     }
 }
@@ -106,13 +117,13 @@ h1 {
     .nav-tabs-elements {
         .element {
             font-family: courgette;
-            font-size: 6vw;
+            font-size: 2vw;
             color: $red;
             border-bottom: 1px solid gray;
             border-right: 1px solid gray;
             border-radius: 0;
             background-color: white;
-            width: 20vw;
+            width: 15vw;
             margin-bottom: 5vh !important;
 
             h6 {
@@ -122,7 +133,7 @@ h1 {
 
         .active {
             background-color: white !important;
-            border-right: 5px solid gray;
+            border-right: 3px solid gray;
 
             i {
                 color: $red;
@@ -205,21 +216,29 @@ h1 {
         color: white;
     }
 }
+
 .input-field {
     width: 100%;
 }
 
-.btn-book{
+.btn-book {
     border-style: none;
     border-radius: 39px;
     width: 130px;
     height: 40px;
 }
+
 input {
     padding: 12px;
 
     @media (max-width: 426px) {
-        padding-left: 95px;
+        .bg-footer{
+            margin: 0;
+        }
+    }
+
+    .ig {
+        margin-right: 10%;
     }
 }
 
@@ -238,5 +257,21 @@ input {
     }
 }
 
+@media (max-width: 426px) {
+    .card img{
+        
+        width: 80%;
+        margin-bottom: 20px;
 
 
+    }
+    .div-card , .card-block{
+        margin-left: -45px;
+    }
+    .txt{
+        text-align: center;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        font-size: 7px;
+    }
+}
