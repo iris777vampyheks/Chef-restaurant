@@ -1,0 +1,242 @@
+body {
+    background-image: url(../../../public/images/main_bg.jpg);
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.list-inline-item:hover {
+    background-color: rgb(204, 2, 2);
+
+    .btn {
+        border-radius: 77px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+//* section 2
+.nav-tabs-elements {
+    .element {
+        font-size: 71px;
+        color: rgb(244, 39, 39);
+        border: 2px rgb(245, 87, 87) solid;
+        border-radius: 0;
+        background-color: white;
+        animation: pulse 2s linear infinite;
+    }
+
+    .active {
+        background-color: white !important;
+        animation: pulse-active 4s linear infinite;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse-active {
+    0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 5px rgba(213, 44, 44, 0.8);
+    }
+
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(206, 41, 41, 0.8);
+    }
+
+    100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 5px rgba(173, 39, 39, 0.8);
+    }
+}
+
+
+i {
+    color: rgb(173, 39, 39);
+}
+h1 {
+    font-family: courgette;
+}
+.menu-table {
+    width: 100%;
+    height: fit-content;
+
+    .col-6 {
+        width: 40%;
+        height: 20vh;
+        border-bottom: 1px solid #d23f3f;
+
+        img {
+            border-radius: 50%;
+            width: 15%;
+        }
+
+        .col-text {
+            font-size: 1vw;
+
+            p {
+                width: 100%;
+            }
+        }
+
+        .price {
+            width: 17%;
+            color: $red;
+            background-color: #d2b3b3;
+        }
+    }
+}
+
+
+@media (max-width: 426px) {
+    .nav-tabs-elements {
+        .element {
+            font-family: courgette;
+            font-size: 6vw;
+            color: $red;
+            border-bottom: 1px solid gray;
+            border-right: 1px solid gray;
+            border-radius: 0;
+            background-color: white;
+            width: 20vw;
+            margin-bottom: 5vh !important;
+
+            h6 {
+                font-size: 3vw !important;
+            }
+        }
+
+        .active {
+            background-color: white !important;
+            border-right: 5px solid gray;
+
+            i {
+                color: $red;
+            }
+
+            h5 {
+                color: black !important;
+            }
+        }
+
+        .menu-table {
+            width: 100%;
+            height: fit-content;
+
+            .col-6 {
+                width: 100%;
+                height: 15vh;
+                border-bottom: 1px solid $red;
+
+                h3 {
+                    font-size: 13px;
+                }
+
+                p {
+                    margin-top: 0 !important;
+                }
+
+                img {
+                    border-radius: 50%;
+                    width: 15%;
+                }
+
+                .col-text {
+                    width: 50%;
+                    font-size: 10px;
+                }
+
+                .price {
+                    width: 10%;
+                    color: $red;
+                    background-color: #c4b4b4;
+                    font-size: 16px;
+                    margin-right: 3vw;
+                }
+            }
+        }
+    }
+}
+
+.section3 {
+    height: auto;
+    width: 100%;
+    background-color: rgba(31, 30, 30, 0.851);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section4 {
+    background-color: #fff;
+
+    .section-form {
+        background-image: url(../../../public/images/book_table_bg.jpg);
+        height: auto;
+        width: 60vw;
+        border-radius: 20px;
+    }
+}
+
+.div-card {
+    width: 250px;
+    position: absolute;
+    left: 40px;
+    top: -23px;
+    border-radius: 10px;
+    padding: 5px 25px;
+
+    p {
+        color: white;
+    }
+}
+.input-field {
+    width: 100%;
+}
+
+.btn-book{
+    border-style: none;
+    border-radius: 39px;
+    width: 130px;
+    height: 40px;
+}
+input {
+    padding: 12px;
+
+    @media (max-width: 426px) {
+        padding-left: 95px;
+    }
+}
+
+.section5 {
+    background-image: url(../../../public/images/team_background.jpg);
+    background-color: rgba(31, 30, 30, 0.918);
+    background-blend-mode: darken;
+    background-size: cover;
+
+
+    .section5-img {
+        img {
+            border-radius: 50%;
+            border: 2px solid #ffffff9b;
+        }
+    }
+}
+
+
+

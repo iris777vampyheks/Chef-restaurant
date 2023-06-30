@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant chef</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Belanosima:wght@600&family=Courgette&family=Dancing+Script&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/app.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <section class="header-section" style="background-image: url(../../../public/images/banner1.jpg); height: 90vh; background-blend-mode: darken; background-size: cover; background-position: center; background-color: rgba(0, 0, 0, 0.269);">
+        <nav class="d-flex flex-column flex-lg-row justify-content-lg-around align-items-lg-center pt-3">
+            <ul class="list-inline mt-1 border-bottom border-top border-3" style="text-transform: uppercase;">
+                <li class="list-inline-item p-2 px-3"><a class="text-decoration-none text-light" href=""> Home</a></li>
+                <li class="list-inline-item p-2 px-3"><a class="text-decoration-none text-light" href=""> About us</a></li>
+                <li class="list-inline-item p-2 px-3"><a class="text-decoration-none text-light" href=""> MenuList</a></li>
+                <li class="list-inline-item p-2 px-3"><a class="text-decoration-none text-light" href=""> Team</a></li>
+            </ul>
+            <img class="d-none d-lg-block" src="./public/images/logo.png" alt="">
+            <ul class="list-inline mt-1 border-bottom border-top border-3" style="text-transform: uppercase;">
+                <li class="list-inline-item p-2 px-3"><a class="text-decoration-none text-light" href=""> Reserver</a></li>
+                <li class="list-inline-item p-2 px-3"><a class="text-decoration-none text-light" href=""> Blog</a></li>
+                <li class="list-inline-item p-2 px-3"><a class="text-decoration-none text-light" href=""> Testimonials</a></li>
+                <li class="list-inline-item p-2 px-3"><a class="text-decoration-none text-light" href=""> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="texto text-center mt-5" style="font-family: courgette;">
+            <div class="texto d-flex align-items-center justify-content-center top-200 ">
+                <h1 class="text-light">whatever your <span style="font-family: courgette; color: rgb(211, 25, 25); font-weight: 700;" >OCCASION</span>, <br> <span  style="text-transform: uppercase; font-family: courgette; color: rgb(211, 29, 29); font-weight: 700;"  >taste</span> makes <br> it one to <span  style="font-family: courgette; font-size: larger; color: rgb(233, 27, 27); font-weight: 700;  ">remember!</span></h1>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <button class="btn-book bg-light text-dark mx-4 " id="purchase-theme-btn">purchase theme</button>
+                <button class="btn-book bg-danger text-light  px-3" id="learn-more-btn">Learn more</button>
+            </div>
+        </div>
+    </section>
+    
+        <!-- section 2 -->
+        <section class="container mt-4">
+            <div class="section2  bg-light m-0 p-0">
+                <div class="d-flex justify-content-between">
+                    <img src="./public/images/box-left-top.png" alt="">
+                    <h1 class="text-center mt-5"><span class="text-danger" style="font-family: courgette; font-size: larger;">OUR</span> Story</h1>
+                    
+                    <img class="float-end" src="./public/images/box-right-top.png" alt="">
+                    
+                </div>
+                <div class="text-center">
+                    <img src="./public/images/decoration_line.png" alt="">
+
+                </div>
+                <div class="text-center container mt-5">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, ull <br>Lorem ipsum dolor,
+                        sit amet consectetur adipisicing elit. Assumenda, <br> Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Unde, venhh <br>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Totam, explica <br>Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Temporibus, <br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores, accu <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, illum.
+                        <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, repu
+                    </p>
+                </div>
+                <h1 class="text-center mt-5"><span class="text-danger" style="font-family: courgette; font-size: larger;">OUR</span> Menu chef</h1>
+
+                <div class="text-center">
+                    <img src="./public/images/decoration_line.png" alt="">
+
+                </div>
+                <!-- tablist -->
+                <section class="section2 d-flex align-items-center container">
+                    <div
+                        class="nav-tabs-elements mt-5 ms-5 bg-white d-flex align-items-start flex-lg-row flex-column align-items-center">
+                        <div class="">
+                            <div class="nav tabs-nav-links flex-lg-column flex-md-row nav-pills me-5" id="v-pills-tab"
+                                role="tablist" aria-orientation="vertical">
+                                <button class=" element nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                    aria-selected="true">
+                                    <i class="fa-solid fa-mug-hot"></i>
+                                    <h6 class="text-black">Starters</h6>
+                                </button>
+                                <button class="element nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-profile" type="button" role="tab"
+                                    aria-controls="v-pills-profile" aria-selected="false">
+                                    <i class="fa-solid fa-bell-concierge"></i></i>
+                                    <h6 class="text-black">Lunch</h6>
+                                </button>
+                                <button class="element nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-messages" type="button" role="tab"
+                                    aria-controls="v-pills-messages" aria-selected="false">
+                                    <i class="fa-solid fa-cookie"></i>
+                                    <h6 class="text-black">Snacks</h6>
+                                </button>
+                                <button class="element nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-settings" type="button" role="tab"
+                                    aria-controls="v-pills-settings" aria-selected="false">
+                                    <i class="fa-solid fa-burger"></i>
+                                    <h6 class="text-black">Dinner</h6>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-content menu-table mt-md-4" id="v-pills-tabContent">
+                            <!-- breakfast -->
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab" tabindex="0">
+                                <div class="">
+                                    <div class="row g-2">
+
+                                        <div class=" ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_1.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Cornflakes and milk</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 25 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_1.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Toast with cucambre</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 33 $</div>
+                                        </div>
+                                        <div class=" ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_1.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Toasted bread and juice</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 14 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_1.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Something to eat</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 25 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_1.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Pancakes and chocolate</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 57 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_1.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Milkshake strawberry</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 15 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_1.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Healthy musli</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 24 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_1.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Morning vibes menu</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 20 $</div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- lunch -->
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                <div class="">
+                                    <div class="row g-2">
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_2.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Crevettes bjlbana</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 75 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_2.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Menu vegetables</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 55 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_2.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Salade mixte</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 54 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_2.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Spanish bread</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 53 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_2.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Chicken with Potatoes</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 86 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_2.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Tagliatelle bianca</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 71 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_2.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Rosemary ananas</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 64 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_2.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Steak With Potatoes</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 35 $</div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- snacks -->
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab" tabindex="0">
+                                <div class="">
+                                    <div class="row g-2">
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around ">
+                                            <img src="./public/images/menu_image_3.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Pizza Shawarma</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 21 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_3.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Pizza Shawarma</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 20 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_3.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Pizza thone</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 20 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_3.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Spaghetti</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 20 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around ms-3 ">
+                                            <img src="./public/images/menu_image_3.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Pasticcio</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 20 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around ms-3 ">
+                                            <img src="./public/images/menu_image_3.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Mini burger</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 20 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around ms-3 ">
+                                            <img src="./public/images/menu_image_3.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Cheesy burger</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 20 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around ms-3 ">
+                                            <img src="./public/images/menu_image_3.jpg" alt="">
+                                            <div class=" ms-3">
+                                                <h3>Meow meow</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 20 $</div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- dinner -->
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab" tabindex="0">
+                                <div class="">
+                                    <div class="row g-2">
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_4.jpg" alt="">
+                                            <div class="ms-3  ">
+                                                <h3>Garlic steak</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 35 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_4.jpg" alt="">
+                                            <div class="ms-3  ">
+                                                <h3>Rosemary steak</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 35 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_4.jpg" alt="">
+                                            <div class="ms-3  ">
+                                                <h3>Pizza calamari</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 35 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_4.jpg" alt="">
+                                            <div class="ms-3 ">
+                                                <h3>Fritora and sauces</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 35 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_4.jpg" alt="">
+                                            <div class="ms-3 ">
+                                                <h3>Flamin' grilled burger</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="ms-3 price text-center"> 35 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_4.jpg" alt="">
+                                            <div class="ms-3 ">
+                                                <h3>Bacon cheddar</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="ms-3 price text-center"> 35 $</div>
+                                        </div>
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_4.jpg" alt="">
+                                            <div class="ms-3  ">
+                                                <h3>BBQ Beef and chili</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class=" ms-3 price text-center"> 35 $</div>
+                                        </div>
+
+                                        <div class="ms-3 col-6 d-flex align-items-center justify-content-around  ">
+                                            <img src="./public/images/menu_image_4.jpg" alt="">
+                                            <div class=" ms-3" ">
+                                                <h3>Chia seed pudding</h3>
+                                                <p>Welcome To Lorem ipsum, dolor sit amet consectetur adipisicing
+                                                    elit. Alias, impedit.</p>
+                                            </div>
+                                            <div class="price text-center"> 35 $</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="d-flex justify-content-between">
+                    <img src="./public/images/box-bottom-left.png" alt="">
+                    <img src="./public/images/box-bottom_right.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!----------------------------- section 3 -->
+        <section class="section3 mt-3 w-100 bg-dark">
+            <h1 class="text-center text-light pt-3"><span class="text-danger" style="font-family: courgette; font-size: larger;"> MEET</span> Our chef</h1>
+            <div class="text-center">
+                <img class="img" src="./public/images/decoration_line.png" alt="">
+            </div>
+            <div
+                class=" d-flex flex-column flex-md-row justify-content-md-evenly align-items-lg-center pt-3 text-center text-light mt-2">
+                <div>
+                    <img src="./public/images/chef1.png" height="250px" alt="">
+                    <p>Chef william</p>
+                </div>
+                <div>
+                    <img src="./public/images/chef2.png" height="250px" alt="">
+                    <p>Chef ramsey</p>
+                </div>
+                <div>
+                    <img src="./public/images/chef3.png" height="250px" alt="">
+                    <p>Chef samadi</p>
+                </div>
+                <div>
+                    <img src="./public/images/chef4.png" height="250px" alt="">
+                    <p>Chef wail</p>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------- section 4 -->
+        <section class="container mt-4">
+            <div class="section4">
+                <div class="d-flex justify-content-between">
+                    <img src="./public/images/box-left-top.png" alt="">
+                    <h1 class="text-center mt-5"><span class="text-danger" style="font-family: courgette; font-size: larger;">Book</span> your table</h1>
+                    <img class="float-end" src="./public/images/box-right-top.png" alt="">
+                </div>
+                <div class="text-center">
+                    <img src="./public/images/decoration_line.png" alt="">
+                </div>
+                <div class="container w-65 mt-3 rounded section-form p-3 d-flex flex-column align-items-center ">
+    <p class="text-light mt-4" style="font-size: larger;">For any query please call us at : <b style="font-size: x-large;"> +91-1234567890</b></p>
+    <div class="d-flex">
+        <form action="" class="mb-2 mt-2">
+            <div class="row">
+                <div class="col">
+                    <input type="text" placeholder="Full Name" class="mt-1 rounded-pill border-0 input-field">
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="ID" class="mt-1 rounded-pill border-0 input-field">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <input type="tel" placeholder="Phone Number" class="mt-1 rounded-pill border-0 input-field">
+                </div>
+                <div class="col">
+                    <input type="number" placeholder="Number of Persons" class="mt-1 rounded-pill border-0 input-field">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <input type="date" placeholder="Date" class="mt-1 rounded-pill border-0 input-field">
+                </div>
+                <div class="col">
+                    <input type="time" placeholder="Time" class="mt-1 rounded-pill border-0 input-field">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <select class="form-select form-select-lg mt-1 rounded-pill border-0 input-field">
+                        <option selected disabled>Occasion</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="anniversary">Anniversary</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="corporate">Corporate Event</option>
+                    </select>
+                </div>
+                
+                <div class="col">
+                    <select class="form-select form-select-lg mt-1 rounded-pill border-0 input-field">
+                        <option selected>Select Cuisine</option>
+                        <option value="1">Italienne</option>
+                        <option value="2">Maroccaine</option>
+                        <option value="3">Spanish</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn-book bg-danger text-light p-2 px-4">Book Now</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+            <div>
+                    <h1 class="text-center mt-5"><span class="text-danger" style="font-size: larger;">Our</span> blog</h1>
+                </div>
+                <div class="text-center">
+                    <img class="mb-5" src="./public/images/decoration_line.png" alt="">
+                </div>
+
+                <div class="d-flex flex-column flex-md-row container justify-content-center gap-3">
+                    <!-- card onee -->
+                    <div class="card ms-lg-4 border-0" style="width: 370px;">
+                        <img class="card-img-top border border-4 border-oussama rounded-3"
+                            src="./public/images/blog_img1.jpg" height="300px" alt="Card image cap">
+                        <div class="card-block position-relative">
+                            <div class="div-card bg-danger ms-4 ">
+                                <p class="text-center"> <b>12</b>/ April 2077/ <b>12</b>Comments/ <b>75812</b>Likes</p>
+                            </div><br>
+                            <h4 class="mt-5">Taste Temptations</h4>
+                            <p class="card-text">Start your dining experience with our mouthwatering selection of appetizers. From crispy calamari to creamy spinach and artichoke dip,</p>
+                        </div>
+                    </div>
+                    <!-- card two -->
+                    <div class="card border-0" style="width: 370px;">
+                        <img class="card-img-top border border-4 border-oussama rounded-3" src="./public/images/blog_img2.jpg" height="300px" alt="Card image cap">
+                        <div class="card-block position-relative">
+                            <div class="div-card bg-danger ms-4">
+                                <p class="text-center"> <b>12</b> April 2077 / <b>12</b>Comments/ <b>12025</b>Likes</p>
+                            </div><br>
+                            <h4 class="mt-5">Unforgettable Flavors </h4>
+                            <p class="card-text">To complement your meal, we offer an extensive wine list featuring a curated selection of both local and international wines. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" text-center pt-5">
+                    <button class="btn bg-red text-light px-4 pt-2 pb-2 "> more more</button>
+
+                </div>
+                <div class="d-flex justify-content-between">
+                    <img src="./public/images/box-bottom-left-grey.png" alt="">
+                    <img src="./public/images/box-bottom_right-grey.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- section5 -->
+        <section>
+            <div class="section5 mt-4 ">
+                <div class="pt-5">
+                    <h1 class="text-center text-light"><span class="text-danger"><b  style="font-family: courgette; font-size: larger;">CLIENT</b></span> Testimonials</h1>
+                    <div class="text-center">
+                        <img src="./public/images/decoration_line.png" alt="">
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex flex-column flex-lg-row justify-content-md-evenly align-items-center pt-4 pb-4 container gap-3">
+                    <div class="d-flex flex-column flex-md-row justify-content-md-evenly align-items-center gap-3">
+                        <div class="section5-img">
+                            <img src="./public/images/testimonial1.jpg" width="145px" height="145px" alt="">
+                        </div>
+                        <div class="border border-1 ps-2 rounded-2">
+                            <h4 class="text-light mt-2">Lorem, ipsum.</h4>
+                            <h6 class="text-danger">manager</h6>
+                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ab rem
+                                ut architecto impedit modi libero!</p>
+                        </div>
+                    </div>
+                    <div
+                        class="d-flex flex-column-reverse flex-md-row justify-content-md-evenly align-items-center gap-3 ">
+                        <div class="border border-1 ps-2 rounded-2">
+                            <h4 class="text-light mt-2">Lorem, ipsum.</h4>
+                            <h6 class="text-danger">manager</h6>
+                            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ab rem
+                                ut architecto impedit modi libero!</p>
+                        </div>
+                        <div class="section5-img ">
+                            <img src="./public/images/testimonial1.jpg" width="145px" height="145px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 6 -->
+        <section>
+            <div class="pt-5 pb-4">
+                <h1 class="text-center"><span class="text-danger"><b  style="font-family: courgette; font-size: larger;">OUR</b></span> Contact</h1>
+                <div class="text-center">
+                    <img src="./public/images/decoration_line.png" alt="">
+                </div>
+            </div>
+            <div class="bg-danger rounded-2 text-center container text-light" style="width: 375px;">
+                <i class="fa-solid fa-location-dot fa-3x pt-3" style="color: #ffffff;"></i>
+                <p class="pt-3">Here is our location where you can come and visit our fancy restaurant as soon as you can</p>
+                <hr>
+                <i class="fa-solid fa-phone fa-3x pt-3" style="color: #ffffff;"></i>
+                <p class="pt-3"> <b>+125548555586</b></p>
+                <hr>
+                <i class="fa-solid fa-envelope fa-3x pt-3" style="color: #ffffff;"></i>
+                <p class="pt-3 pb-4">restaurant_chef696@gmail.com</p>
+            </div>
+        </section>
+    <!-- footer -->
+    <footer>
+        <div>
+            <div class="bg-footer p-5">
+                <div class="row">
+                    <div class="col text-light mt-2">
+                        <h2>ABOUT US</h2><br>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus,
+                            consequuntur non magni placeat ipsa expedita omnis earum eum in voluptatum.
+                            Aliquid aut hic nisi iure alias ipsum minima voluptas amet.</p>
+                        <div class="d-flex gap-3 mt-5">
+                            <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-google-plus-g fa-2xl ms-3" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-pinterest fa-2xl ms-3" style="color: #ffffff;"></i>
+                            <i class="fa-brands fa-linkedin fa-2xl ms-3" style="color: #ffffff;"></i>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="col text-light pt-2 mb-3 ms-lg-5">
+                            <h2>INSTAGRAM</h2><br>
+
+                            <div class="d-flex gap-3">
+                                <img src="./public/images/instragram_gallery_img1.jpg" width="65px" alt="">
+                                <img src="./public/images/instragram_gallery_img1.jpg" width="65px" alt="">
+                                <img src="./public/images/instragram_gallery_img1.jpg" width="65px" alt="">
+                                <img src="./public/images/instragram_gallery_img1.jpg" width="65px" alt="">
+                            </div>
+                            <div class="d-flex gap-3 mt-3">
+                                <img src="./public/images/instragram_gallery_img1.jpg" width="65px" alt="">
+                                <img src="./public/images/instragram_gallery_img1.jpg" width="65px" alt="">
+                                <img src="./public/images/instragram_gallery_img1.jpg" width="65px" alt="">
+                                <img src="./public/images/instragram_gallery_img1.jpg" width="65px" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col mt-md-3 ms-md-6 ">
+                        <h2 class="text-light ms-md-5 ">POPULAR TAGS</h2><br>
+                        <div class="d-flex gap-1 text-light">
+                            <p class="bg-red border border-1 rounded-2 p-2">CEO of the planet</p>
+                            <p class="bg-red border border-1 rounded-2 p-2">Blog section II</p>
+                            <p class="bg-red border border-1 rounded-2 p-2">Food in 3s</p>
+                        </div>
+                        <div class="d-flex gap-1 text-light">
+                            <p class="bg-red border border-1 rounded-2 p-2">Any text cbh</p>
+                            <p class="bg-red border border-1 rounded-2 p-2">Graphic design</p>
+                            <p class="bg-red border border-1 rounded-2 p-2">3D design</p>
+                        </div>
+                        <div class="d-flex gap-1 text-light">
+                            <p class="bg-red border border-1 rounded-2 p-2">Restaurant</p>
+                            <p class="bg-red border border-1 rounded-2 p-2">Cuisine</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-danger" style="height: 10vh; width:100%">
+
+            </div>
+        </div>
+    </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

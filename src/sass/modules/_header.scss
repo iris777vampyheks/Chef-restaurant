@@ -1,0 +1,23 @@
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+    nav {
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+
+        ul {
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+
+            li {
+                a:hover {
+                    background-color: #c42d40;
+                    padding: 9px 20px;
+                }
+            }
+        }
+    }
+}
